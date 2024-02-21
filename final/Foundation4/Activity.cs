@@ -1,7 +1,7 @@
 class Activity
 {
-    private DateTime Date;
-    private int DurationMinutes;
+    protected DateTime Date { get; private set; }
+    protected int DurationMinutes { get; private set; }
 
     public Activity(DateTime date, int durationMinutes)
     {

@@ -15,11 +15,11 @@ class RunningActivity : Activity
 
     public override double GetSpeed()
     {
-        return DistanceMiles / (base.DurationMinutes / 60.0);
+        return DistanceMiles / (DurationMinutes / 60.0);
     }
 
     public override double GetPace()
     {
-        return base.DurationMinutes / DistanceMiles;
+        return DurationMinutes / DistanceMiles;
     }
 }
